@@ -6,7 +6,8 @@
 		"start": "node ./bin/www",
 		"start:dev": "set NODE_ENV=dev && nodemon ./bin/www",
 		"start:prod": "set NODE_ENV=prod && nodemon ./bin/www",
-		"start:test": "set NODE_ENV=test && mocha ./test.js --timeout 10000"
+		"start:test": "set NODE_ENV=test && mocha ./test.js --timeout 10000",
+		"build":"set NODE_ENV=prod && node ./bin/www"
 	},
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
